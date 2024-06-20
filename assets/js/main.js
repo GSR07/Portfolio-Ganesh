@@ -58,7 +58,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 /*== EmailJS ==*/
 
-emailjs.init("service_fyr25gk");
+emailjs.init("q9C1Wfmg7LuqVTRul");
 
 /*== Form ==*/
 document.querySelector('.contact__form').addEventListener('submit', function(event) {
@@ -72,7 +72,7 @@ document.querySelector('.contact__form').addEventListener('submit', function(eve
         alert("All fields are required!");
     } else {
         // Use EmailJS to send the form data
-        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        emailjs.send("service_fyr25gk", "template_aknkv9h", {
             name: name,
             email: email,
             message: message
