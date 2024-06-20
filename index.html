@@ -10,6 +10,10 @@
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+    <!--Email service script --> 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
     <title>Portfolio website complete</title>
 </head>
 
@@ -188,10 +192,10 @@
 
             <div class="contact__container bd-grid">
                 <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
+                    <input type="text" placeholder="Name" class="contact__input" name="name">
+                    <input type="email" placeholder="Email" class="contact__input" name="email">
+                    <textarea name="message" id="message" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+                    <input type="submit" value="Submit" class="contact__button button">
                 </form>
             </div>
         </section>

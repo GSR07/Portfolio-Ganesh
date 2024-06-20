@@ -54,3 +54,37 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+/*== EmailJS ==*/
+
+emailjs.init("service_fyr25gk");
+
+/*== Form ==*/
+document.querySelector('.contact__form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting the traditional way
+
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    if (name === "" || email === "" || message === "") {
+        alert("All fields are required!");
+    } else {
+        // Use EmailJS to send the form data
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+            name: name,
+            email: email,
+            message: message
+        }).then(function(response) {
+            alert("Form submitted successfully!");
+            console.log("SUCCESS!", response.status, response.text);
+        }, function(error) {
+            alert("Failed to send the form. Please try again later.");
+            console.log("FAILED...", error);
+        });
+    }
+});
+
+
+
