@@ -716,10 +716,5 @@ img {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  .skills__container {
-    grid-template-columns: repeat(2, .5fr);
-    justify-content: center;
-    column-gap: 1rem;
-  }
 }
 }
