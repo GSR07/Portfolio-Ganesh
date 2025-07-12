@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Email service script --> 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+
+    <title>Portfolio website complete</title>`
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Ganesh Reddy</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#timeline" class="nav__link">Timeline</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <!-- <li class="nav__item"><a href="#awards" class="nav__link">Awards</a></li> -->
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ganesh Reddy</span>
+                </h1>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/ganeshssreddy09/" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://discord.com/channels/@me" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-discord"></i></a>
+                <a href="https://github.com/GSR07" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+                <a href="mailto:ganeshreddy30102000@example.com" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-gmail'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/profile_1.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpeg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Ganesh Reddy</h2>
+                    <br class="about__text">I'm a Robotics and Machine Learning Engineer currently pursuing a Master's in Autonomous Technologies at Friedrich-Alexander-Universität Erlangen-Nürnberg. I specialize in building intelligent systems that combine mechanical design, computer vision, and embedded software.<br>
+                            <br>My work involves designing and simulating robotic arms and autonomous vehicles using ROS/ROS2, SolidWorks, and Gazebo, alongside implementing control algorithms in Python and C++. I enjoy bringing together hardware and software to build real-time, sensor-driven applications—whether it's an IoT-enabled device or a computer vision system using YOLOv3 and OpenCV.<br> 
+                            <br>Passionate about solving real-world challenges through robotics and AI, I thrive in collaborative environments and continuously seek opportunities to apply machine learning, automation, and simulation techniques for impactful innovation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Professional Skills</h2>
+                    <p class="skills__text">Skills I’ve acquired and applied in real-world robotics & automation projects.</p>
+
+                    <!-- Python -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__python"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <!-- ROS/ROS2 -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-cog skills__icon'></i>
+                            <span class="skills__name">ROS / ROS2</span>
+                        </div>
+                        <div class="skills__bar skills__ros"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <!-- SolidWorks -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">SolidWorks</span>
+                        </div>
+                        <div class="skills__bar skills__solidworks"></div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-show-alt skills__icon'></i>
+                            <span class="skills__name">Computer Vision</span>
+                        </div>
+                        <div class="skills__bar skills__cv"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Technology -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-chip skills__icon'></i>
+                            <span class="skills__name">Embedded Technology</span>
+                        </div>
+                        <div class="skills__bar skills__embedded"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="Skills" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== TIMELINE =====-->
+        <section class="resume section" id="timeline">
+            <h2 class="section-title">Resume</h2>
+
+        <div class="timeline-wrapper">
+
+            <!-- === Education === -->
+            <div class="timeline-block">
+            <h3 class="timeline-heading"><i class='bx bx-book-open'></i> Education</h3>
+
+            <div class="timeline-item">
+                <div class="dot-line"></div>
+                <div class="timeline-content">
+                <h4>Friedrich Alexander Universität Erlangen – Nürnberg</h4>
+                <p>Master of Science – Autonomy Technology, Specialization in Planning, Control and Human Manchine Interaction.</p>
+                </div>
+                <div class="timeline-date">2024 – Present</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="dot-line"></div>
+                <div class="timeline-content">
+                <h4>KLE Technological University, Hubli</h4>
+                <p>Bachelor of Engineering – Automation and Robotics.<br>GPA: 2.3 (Performance: Good)</p>
+                </div>
+                <div class="timeline-date">2018 – 2022</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="dot-line"></div>
+                <div class="timeline-content">
+                <h4>SBR PU Composite University – High School Of Science</h4>
+                <p>High School Certification – Computer Science<br>GPA: 1.39 (Performance: V.Good)</p>
+                </div>
+                <div class="timeline-date">2016 – 2018</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="dot-line"></div>
+                <div class="timeline-content">
+                <h4>APPA Public School – Secondary School</h4>
+                <p>Secondary School Certification<br>GPA: 1.24 (Performance: V.Good)</p>
+                </div>
+                <div class="timeline-date">2006 – 2016</div>
+            </div>
+            </div>
+
+            <!-- === Experience === -->
+            <div class="timeline-block">
+            <h3 class="timeline-heading"><i class='bx bx-briefcase-alt'></i> Experience</h3>
+
+            <div class="timeline-item">
+                <div class="dot-line"></div>
+                <div class="timeline-content">
+                <h4>Software Intern | Digital Associates</h4>
+                <p>
+                    Responsibilities:<br>
+                     ▪ Developed indoor localization using BLE and ESP32<br>
+                     ▪ Designed PCBs with KiCad and Eagle, validated circuits with oscilloscopes and Multimeter<br>
+                     ▪ Built responsive web interfaces using HTML, CSS, JS, and React<br>
+                     ▪ Participated in Agile sprints and milestone tracking<br>
+                </p>
+                </div>
+                <div class="timeline-date">Jan 2023 – Oct-2023</div>
+            </div>
+
+             <!-- Centre for Autonomous Systems -->
+            <div class="timeline-item">
+                <div class="dot-line"></div>
+                <div class="timeline-content">
+                <h4>Systems Engineer Intern | Centre for Autonomous Systems Engineering</h4>
+                <p>
+                    ▪ Designed a robotic arm for AGV using SolidWorks, motion simulated in Gazebo, Moveit<br>
+                    ▪ Built URDF models and integrated them into ROS framework<br>
+                    ▪ Performed stress analysis using SolidWorks Simulation<br>
+                    ▪ Delivered documentation with technical drawings and Gantt tracking.
+                </p>
+                </div>
+                <div class="timeline-date">Jan 2022 – Jul 2022</div>
+            </div>
+
+            </div>
+        </section>
+
+
+
+        <!--===== Projects =====-->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container bd-grid">
+                <!-- Project 1 - Robotic Arm for AGV -->
+                <a href="https://github.com/GSR07/robotic-arm-agv" target="_blank" class="work__img">
+                    <img src="assets/img/Picture1.png" alt="Robotic Arm for AGV">
+                </a>
+
+                <!-- Project 2 - Line -following -->
+                <a href="https://github.com/GSR07/Line-following-robot" target="_blank" class="work__img">
+                    <img src="/assets/img/LFR-img.png" alt="Line Following Robot">
+                </a>
+
+                <!-- Project 3 - SDP -->
+                <a href="https://github.com/GSR07/SDP" target="_blank" class="work__img">
+                    <img src="/assets/img/cad.png" alt="YOLO Object Detection">
+                </a>
+
+                <!-- Project 4 - ROS2 Turtlesim Catcher with YouTube Video -->
+                <div class="work__img">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4x6qxieF2jQ?si=8PHO-0ixZdBG630r"
+                        title="ROS2 Turtlesim Catcher" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!--===== CERTIFICATES =====-->
+        <section class="work section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="work__container bd-grid">
+
+                <!-- Udemy Certificate -->
+                <a href="https://www.udemy.com/certificate/UC-73547ba3-1666-46fc-90b6-3fa750cc555b/" target="_blank" class="work__img">
+                    <img src="assets/img/udemy.webp" alt="Udemy Certificate">
+                    <p class="cert-title">ROS 2 </p>
+                </a>
+
+                <!-- Coursera Certificate 1 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/AGJN6VNYPP6B" target="_blank" class="work__img">
+                    <img src="assets/img/michigen.webp" alt="Coursera Certificate">
+                    <p class="cert-title">Python for Everyone – University of Michigan</p>
+                </a>
+
+                <!-- Coursera Certificate 2 -->
+                <a href="https://www.coursera.org/account/accomplishments/verify/XHF347KR3FZX" target="_blank" class="work__img">
+                    <img src="assets/img/michigen.webp" alt="Coursera Certificate">
+                    <p class="cert-title">Using Python to Access Web Data - University of Michigan</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!--===== AWARDS =====-->
+        <!-- <section class="awards section" id="awards">
+            <h2 class="section-title">Appreciations & Awards</h2>
+            <div class="about__container bd-grid">
+                <div class="about__text">
+                    <p><b>Best Capstone Award - FAU, 2025:</b> Recognized for the most innovative real-time vision-guided robotic arm system using YOLOv4.</p>
+                    <p><b>Intern of the Year - XYZ Automation:</b> Awarded for building an end-to-end autonomous delivery prototype using ROS2.</p>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!--===== BLOGS =====-->
+        <section class="work section" id="blog">
+            <h2 class="section-title">Blog</h2>
+
+            <div class="work__container bd-grid">
+
+                <!-- Blog Post 1 -->
+                <a href="blog/blog1.html" class="work__img" target="_blank">
+                    <img src="assets/img/trend.png" alt="AI in Robotic Surgery">
+                    <p class="cert-title">AI in Robotic Surgery – 2025 Trends</p>
+                </a>
+
+                <!-- Future Blog -->
+                <a href="assets/Blog/trends.md" class="work__img" target="_blank">
+                    <img src="assets/img/trend.png" alt="Autonomous Delivery Robots">
+                    <p class="cert-title">Rise of Autonomous Delivery Robots</p>
+                </a>
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Ganesh Reddy</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/ganeshssreddy09/" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://discord.com/channels/@me" target="_blank" class="home__social-icon"><i
+                    class="bx bxl-discord"></i></a>
+            <a href="https://github.com/GSR07" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-github'></i></a>
+        </div>
+        <p class="footer__copy">&#169; ganeshreddy. All rigths reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
