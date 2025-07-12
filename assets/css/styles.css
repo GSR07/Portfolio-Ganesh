@@ -324,6 +324,7 @@ img {
   z-index: var(--z-back);
 }
 
+<<<<<<< HEAD
 .skills__python {
   width: 80%;
 }
@@ -341,6 +342,22 @@ img {
 }
 .skills__embedded {
   width: 75%;
+=======
+.skills__html {
+  width: 95%;
+}
+
+.skills__css {
+  width: 85%;
+}
+
+.skills__js {
+  width: 65%;
+}
+
+.skills__ux {
+  width: 85%;
+>>>>>>> b197af87625fd97fb3268d7fa955017590fb435e
 }
 
 .skills__img {
@@ -452,7 +469,10 @@ img {
     column-gap: 1rem;
   }
   .work__container {
+<<<<<<< HEAD
     display: grid;
+=======
+>>>>>>> b197af87625fd97fb3268d7fa955017590fb435e
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
@@ -523,6 +543,7 @@ img {
   }
 }
 
+<<<<<<< HEAD
 /* ===== Timeline Section ===== */
 .timeline-wrapper {
   max-width: 900px;
@@ -680,6 +701,8 @@ img {
 
 /* ===== MEDIA QUERIES ===== */
 
+=======
+>>>>>>> b197af87625fd97fb3268d7fa955017590fb435e
 @media screen and (min-width: 992px) {
   .bd-grid {
     margin-left: auto;
