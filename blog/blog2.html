@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Prosthesis Robotics Blog</title>
+
+  <!-- Link to your global stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <main class="l-main">
+    <section class="work section">
+      <div class="blog__banner">
+        <img src="../assets/img/leg.jpg" alt="Prosthetic Robotics" />
+      </div>
+
+      <div id="blog-content" class="blog__container bd-grid">
+        <p>Loading blog...</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    fetch('../assets/Blog/prosthesis.md')
+      .then(res => res.text())
+      .then(md => {
+        document.getElementById('blog-content').innerHTML = marked.parse(md);
+      });
+  </script>
+</body>
+</html>
