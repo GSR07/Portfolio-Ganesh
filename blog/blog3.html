@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLE Indoor Localization with RSSI</title>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+
+  <!-- Markdown Parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.7;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .blog__banner img {
+      width: 100%;
+      height: auto;
+      border-bottom: 5px solid #0a66c2;
+    }
+
+    .blog__container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .blog__container h1, .blog__container h2, .blog__container h3 {
+      color: #0a66c2;
+    }
+
+    .blog__container img {
+      max-width: 100%;
+      margin: 1.5rem 0;
+      border-radius: 4px;
+    }
+
+    .blog__container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .blog__container th,
+    .blog__container td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .blog__container a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+
+    .blog__container blockquote {
+      background-color: #eef6ff;
+      border-left: 5px solid #0a66c2;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .blog__container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="l-main">
+    <section class="work section">
+      <div class="blog__banner">
+        <img src="../assets/img/blog3.jpg" alt="BLE Indoor Localization">
+      </div>
+      <div id="blog-content" class="blog__container bd-grid">
+        <p>Loading blog...</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    fetch('../assets/Blog/ble.md')
+      .then(res => res.text())
+      .then(md => {
+        document.getElementById('blog-content').innerHTML = marked.parse(md);
+      });
+  </script>
+</body>
+</html>
